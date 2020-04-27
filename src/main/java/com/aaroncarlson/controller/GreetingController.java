@@ -8,8 +8,8 @@ import java.util.Map;
 @Controller
 public class GreetingController {
 
-    @GetMapping("greetings")
-    public String greeting(Map<String, Object> model) {
+    @GetMapping("greeting")
+    public String getGreeting(Map<String, Object> model) {
         model.put("message", "Welcome Aaron!");
         return "greeting";
     }
