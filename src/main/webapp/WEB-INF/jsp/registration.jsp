@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="registrationForm" uri="http://www.springframework.org/tags/form" %>
+<%@ taglib prefix="springTags" uri="http://www.springframework.org/tags" %>
+
 <html lang="en">
 <head>
     <title>Registration</title>
@@ -11,7 +13,7 @@
         <table>
             <tr>
                 <td>
-                    Name:
+                    <springTags:message code="name"/>:
                 </td>
                 <td>
                     <registrationForm:input path="name" />
